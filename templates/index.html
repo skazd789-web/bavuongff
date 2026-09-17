@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mo phong dinh li gioi han trung tam">
+    <title>Mo phong CLT</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/style.css') }}">
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <p class="eyebrow">LAP TRINH PYTHON NANG CAO</p>
+        <h1>Dinh li Gioi han Trung tam</h1>
+        <p>Quan sat phan phoi cua trung binh mau khi n tang.</p>
+      </div>
+    </header>
+
+    <main class="container grid">
+      <section class="card video-card">
+        <h2>Video mo phong</h2>
+        <video controls playsinline preload="metadata" aria-label="Video mo phong dinh li gioi han trung tam">
+          <source src="{{ url_for('static', path='/video/clt_simulation.mp4') }}" type="video/mp4">
+          Trinh duyet cua ban khong ho tro video HTML5.
+        </video>
+      </section>
+
+      <aside class="card">
+        <h2>Cach quan sat</h2>
+        <ol>
+          <li>So sanh cac kich thuoc mau n.</li>
+          <li>Quan sat histogram cua trung binh mau.</li>
+          <li>Danh gia xu huong tien ve dang chuong.</li>
+        </ol>
+      </aside>
+    </main>
+  </body>
+</html>
